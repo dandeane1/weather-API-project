@@ -1,0 +1,2 @@
+const MAPBOX_API_TOKEN ="pk.eyJ1IjoiZGFuZGVhbmUiLCJhIjoiY2xtZjhrNHF5MjA4NTNwbW5qbmk3OTQzZyJ9.GbYWdWoe1yn9MA3dn47yaQ"
+const WEATHER_MAP_KEY ="f23cc9b1cd4e1727b0e570faeaef5bae"
