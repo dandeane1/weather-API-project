@@ -65,12 +65,15 @@ console.log(data)
                   <div class="card-header">${epochConverter(data.list[i].dt)}</div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">${data.city.name}</h5>
+                        <p class="card-text">Temp: ${data.list[i].main.temp.toFixed()} F&deg</p>
+                        <p class="card-text">Feels like: ${data.list[i].main.feels_like.toFixed()} F&deg</p>
                         <p class="card-text">${data.list[i].weather[0].description}</p>
                         <div class="d-flex align-items-center justify-content-center">
                         <img src="https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png"/>
                         </div>
-                        <p class="card-text">Temp: ${data.list[i].main.temp.toFixed()} F&deg</p>
-                        <p class="card-text">Feels like: ${data.list[i].main.feels_like.toFixed()} F&deg</p>
+                        <p class="card-text">High: ${data.list[i].main.temp_max.toFixed()} F&deg</p>
+                        <p class="card-text">Low: ${data.list[i].main.temp_min.toFixed()} F&deg</p>
+                        
                        
                         <p class="card-text">Humidity: ${data.list[i].main.humidity}%</p>
                         <p class="card-text">Wind Speed: ${data.list[i].wind.speed.toFixed()}</p>
@@ -80,6 +83,7 @@ console.log(data)
     return html;
 
 }
+
 
 // date conversion
 const epochConverter = (epoch)=>{
